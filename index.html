@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video-player</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/progress.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-button.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-stop.css' rel='stylesheet'>
+
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-pause.css' rel='stylesheet'>
+</head>
+
+<body>
+  <h1>Custom Video Player</h1>
+  <video src="video/gone.mp4" id="video" class="screen" poster="img/poster.png"></video>
+  <div class="controls">
+    <button class="btn" id="play"><i class="gg-play-button"></i></button>
+    <button class="btn" id="stop"><i class="gg-play-stop"></i></button>
+    <input type="range" id="progress" class="progress" min='0' max='100' step="0.1" value="0">
+    <span class="timestamp" id="timestamp">00:00</span>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
